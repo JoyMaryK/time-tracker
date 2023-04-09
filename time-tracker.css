@@ -1,0 +1,148 @@
+@import url(https://fonts.google.com/specimen/Rubik);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:hsl(226, 43%, 10%) ;
+    font-family: Rubik;
+}
+.profile{
+       
+    grid-area: profile;
+    color: white;
+    border-radius: 20px;
+    background-color:hsl(235, 46%, 20%) ;
+}
+
+.name{
+    background-color: hsl(246, 80%, 60%);
+    justify-self: flex-start;
+    display: grid;
+    height: 70%;
+    border-radius: 20px;
+    
+}
+.profile img{
+    
+    width: 40%;
+    margin-top:30px;
+    justify-self: flex-start;
+    margin-left: 10px;
+    border-radius: 100%;
+    outline: 2px solid white;
+}
+p{
+    margin-left: 10px;
+    
+}
+p span{
+    display: block;
+    font-size: 40px;
+}
+.period{
+    background-color:hsl(235, 46%, 20%) ;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: grid;
+    gap: 15px;
+}
+.period p{
+    color: hsl(235, 45%, 61%);
+    margin: 5px;
+}
+.workTop,.playTop,.exerciseTop,.selfCareTop,.socialTop,.studyTop{
+    
+    border-radius: 25px;
+    display: grid;
+    position: relative;
+}
+.workTop{
+    grid-area: work;
+    background-color: hsl(15, 100%, 70%);
+}
+.workTop img, .playTop img , .studyTop img, .exerciseTop img, .socialTop img , .selfCareTop img{
+    justify-self: end;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.workInfo, .playInfo ,.studyInfo,
+.exerciseInfo,.socialInfo,
+.selfCareInfo{
+    color: white;
+    background-color:hsl(235, 46%, 20%);
+    border-radius: 20px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 80%;
+
+}
+
+
+.playTop{
+    grid-area: play;
+    background-color: hsl(195, 74%, 62%);
+}
+
+
+.studyTop{
+    grid-area: study;
+    background-color: hsl(348, 100%, 68%);
+}
+.exerciseTop{
+    grid-area: exercise;
+    background-color: hsl(145, 58%, 55%);
+}
+.socialTop{
+    grid-area: social;
+    background-color: hsl(264, 64%, 52%);
+}
+.selfCareTop{
+    grid-area: selfCare;
+    background-color: hsl(43, 84%, 65%);
+}
+.container{
+    width: 80%;
+ display: grid;
+ gap: 20px;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(2, 250px);
+ grid-template-areas: " profile work play study" "profile exercise social selfCare";
+}
+
+.title{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: grid;
+
+}
+.title img{
+    margin-top: 17px;
+    margin-right: 7px;
+    height: 5px;
+    
+}
+.title h3{
+    
+}
+
+.Time h2{
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+.Time p{
+    margin-top: 30px;
+    margin-left: 10px;
+}
